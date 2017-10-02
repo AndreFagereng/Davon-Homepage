@@ -1,0 +1,632 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    overflow-y: scroll;
+    display: table;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    display: table;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+
+#header {
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    z-index: 999;
+    transition: all 500ms ease-in-out;
+}
+
+.header-transparent {
+    background-color: rgba(0,0,0,0.9);
+    -webkit-box-shadow: 0px 10px 30px -1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 10px 30px -1px rgba(0,0,0,0.5);
+    box-shadow: 0px 10px 30px -1px rgba(0,0,0,0.5);
+}
+
+header > a > img {
+    float: left;
+    margin: 1.3em 0 0 9em;
+}
+
+#navbar {
+    float: right;
+    margin: 1em 6em 0 0;
+}
+
+#navbar > li {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 20px 20px 20px;
+}
+
+#navbar > li:nth-child(2) > a{
+    opacity: 1;
+    border-bottom: 1px solid white;
+}
+
+#navbar > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: 150ms ease-in;
+}
+
+#navbar > li > a:hover {
+    opacity: 1;
+    border-bottom: 1px solid white;
+}
+#container {
+    position: relative;
+}
+
+.picturebg {
+    display: block;
+    height: 70vh;
+    width: 100%;
+    max-width: 100%;
+    background-image: url("../Bilder/img2.png");
+    background-size: cover;
+    background-position: left;
+    -webkit-box-shadow: 0px -1px 103px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -1px 103px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px -1px 103px 4px rgba(0,0,0,0.75);
+}
+
+
+.content {
+    width: 100%;
+    z-index: 10;
+    margin-top: 3%;
+}
+
+#headline {
+    font-weight: 100;
+    width: auto;
+    text-align: center;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+    color: rgb(50,50,50);
+    white-space: nowrap;
+    margin: 0 auto 0 auto;
+}
+
+#underline {
+    white-space: normal;
+    margin: 0 3% 0 3%;
+}
+
+#allText {
+    display: inline-block;
+    line-height: 2;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+hr {
+    height: 1px;
+    background-color: rgb(200,200,200);
+}
+
+#firstText {
+    width: 35%;
+    margin: 2% auto 3% auto;
+}
+
+#secondText {
+    margin: 3% auto 3% auto;
+    padding: 0 200px 0 200px;
+}
+
+.steps {
+  display: inline-block;
+  min-width: 25%;
+  max-width: 30%;
+  word-wrap: break-word;
+  vertical-align: top;
+  margin: 0 auto 0 auto;
+}
+
+#stepTwo {
+  padding: 0 30px 0 30px;
+}
+
+#thirdText > h2 {
+  letter-spacing: 1.5px;
+  word-spacing: 5px;
+  color: rgb(50,50,50);
+  font-family: inherit;
+  font-weight: 100;
+  text-align: center;
+  margin: 0 0 2% 0;
+}
+
+#thirdPicture {
+  display: block;
+  background-image: url("../Bilder/img3_med.png");
+  background-size: cover;
+  background-position: left;
+  width:100vw;
+  height: 50vh;
+  margin: 3% 0 3% 0;
+}
+
+#thirdText {
+    width: 35%;
+    margin: 3% auto 3% auto;
+}
+
+footer {
+    height: 50px;
+    background-color: #e5e5e5;
+    border-top: 1px solid #d2d1d1;
+}
+
+footer > p {
+    font-family: helvetica;
+    font-size: 10px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.5;
+    vertical-align: middle;
+    padding: 10px 70px 10px 70px;
+}
+
+#sidebartoggler, .toggle, .mobilelogo, .textlogo, #test, .altbilde {
+    display: none;
+}
+
+/****************************************************************************************************
+                          DESKTOP UNDER 1090px
+ *****************************************************************************************************/
+@media (max-width:1090px) {
+
+  header > a > img {
+      float: left;
+      margin: 1.3em 0 0 1em;
+  }
+
+  #navbar {
+      float: right;
+      margin: 1em 1em 0 0;
+  }
+
+  #headline {
+      white-space: normal;
+
+      font-weight: 300;
+      width: auto;
+      text-align: center;
+      border-bottom: 2px solid rgba(196, 89, 89, 1);
+  }
+
+  #underline {
+      white-space: normal;
+      width: auto;
+      margin: 0 3% 0 3%;
+
+  }
+
+  #allText {
+      margin: 0;
+      padding: 0;
+
+  }
+
+  #firstText {
+      float: none;
+      width: auto;
+      margin: 4% 13% 4% 10%;
+  }
+
+  #secondText {
+  }
+
+/* STEP ONE TWO THREE */
+  .steps {
+    display: block;
+    max-width: none;
+    min-width: none;
+  }
+
+  #stepOne {
+
+  }
+
+  #stepTwo {
+    margin: 0;
+    padding: 0;
+  }
+
+  #stepThree {
+  }
+  /* /STEP ONE TWO THREE */
+
+  #thirdText {
+      float: none;
+      width: auto;
+      margin: 4% 13% 4% 10%;
+  }
+
+  footer {
+    display: inline-block;
+    width: 100%;
+  }
+
+}
+
+/****************************************************************************************************
+                          MOBIL
+ *****************************************************************************************************/
+  @media (min-device-width: 320px)
+  and (max-device-width: 880px) {
+
+    #container {
+      border: none;
+    }
+
+    #header {
+        left: -750px;
+        width: 700px;
+        height: 100%;
+        background-color: rgb(40,40,40);
+        z-index: 11;
+        transition: 200ms linear;
+    }
+
+    #header > a > img {
+      display: none;
+    }
+
+    #navbar {
+        padding-top: 140px;
+    }
+
+    #navbar > li {
+        margin: 0px 100px 40px 60px;
+        font-size: 60px;
+        font-weight: 300;
+    }
+
+    #navbar > li:nth-child(2) > a{
+      color:rgba(196, 89, 89, 1);
+      font-weight: 400;
+    }
+
+    #navbar > li > a {
+      opacity: 1;
+      font-size: 60px;
+    }
+
+    .mobileHeader{
+        height: 250px;
+        width: 100%;
+        background-color: rgb(240,240,240);
+        display: block;
+        position: absolute;
+        z-index: 10;
+    }
+
+    .textlogo {
+      font-size: 70px;
+      display: block;
+      color: rgb(40,40,40);
+      margin: 40px 0 0 44px;
+    }
+
+    .textlogo > a{
+      color: rgb(40,40,40);
+      text-decoration: none;
+    }
+
+    .toggle {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        font-size: 100px;
+        color: white;
+        z-index: 10;
+        right: 0;
+        margin: 100px 40px 0px 0px;
+        text-decoration: none;
+        transition: all .2s ease-out;
+    }
+    /******** MENU ICON  ***********/
+    .firstline {
+      height: 2px;
+      background-color: rgb(40,40,40);
+      width: 80px;
+    }
+    .secondline {
+      height: 2px;
+      margin-top: 20px;
+      background-color: rgb(40,40,40);
+      width: 80px;
+      z-index: 10;
+    }
+    .thirdline {
+      height: 2px;
+      margin-top: 20px;
+      background-color: rgb(40,40,40);
+      width: 80px;
+      z-index: 10;
+    }
+
+    .open .firstline {
+      transform: rotate(-45deg) translateY(30px);
+    }
+
+    .open .secondline {
+      opacity: 0;
+    }
+
+    .open .thirdline {
+      transform: rotate(45deg) translateY(-30px);
+    }
+    /******** MENU ICON  ***********/
+
+    .toggle:active {
+        opacity: .5;
+    }
+
+    #sidebartoggler {
+        display: none;
+    }
+
+    #sidebartoggler:checked + .page-wrap #header{
+        left: 0;
+    }
+
+    .picturebg {
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 0 0;
+        border: none;
+        height: 52vh;
+
+    }
+
+    #headline {
+        white-space: normal;
+        font-size: 60px;
+        font-weight: 300;
+        width: auto;
+        text-align: center;
+        border-bottom: 2px solid rgba(196, 89, 89, 1);
+    }
+
+    #underline {
+        white-space: normal;
+        width: auto;
+        margin: 0 3% 0 3%;
+    }
+
+    #allText {
+        margin: 0;
+        padding: 0;
+        font-size: 40px;
+    }
+
+    #firstText {
+        float: none;
+        width: auto;
+        margin: 4% 13% 4% 10%;
+    }
+
+    #secondText {
+    }
+
+  /* STEP ONE TWO THREE */
+    .steps {
+      display: block;
+      max-width: none;
+      min-width: none;
+    }
+
+    #stepOne {
+
+    }
+
+    #stepTwo {
+      margin: 0;
+      padding: 0;
+    }
+
+    #stepThree {
+    }
+    /* /STEP ONE TWO THREE */
+
+    #thirdText {
+        float: none;
+        width: auto;
+        margin: 4% 13% 4% 10%;
+    }
+
+    .toTop {
+      font-size: 100px;
+      padding: 30px 5px 30px 5px;
+      margin-bottom: 25%;
+    }
+
+    footer {
+      height: 210px;
+    }
+
+    footer > p {
+      font-size: 30px;
+      vertical-align: middle;
+    }
+
+        @keyframes testanimasjonMobil {
+        0%{
+            width: 1%;
+            opacity: 0;
+
+        }66% {
+            width: 1%;
+            opacity: 1;
+
+        }100% {
+            width: 100%;
+        }
+    }
+}
+
+/****************************************************************************************************
+                          MOBIL LANDSCAPE
+ *****************************************************************************************************/
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 736px)
+and (orientation : landscape) {
+
+  .mobileHeader{
+      height: 100px;
+      width: 100%;
+      background-color: rgb(240,240,240);
+      display: block;
+      position: absolute;
+      z-index: 10;
+  }
+
+  #header {
+      left: -750px;
+      width: 400px;
+      height: 100%;
+      background-color: rgb(40,40,40);
+      z-index: 11;
+      transition: 200ms linear;
+  }
+
+  #header > a > img {
+      display: none;
+  }
+
+  #navbar {
+    padding-top: 40px;
+  }
+
+  #navbar > li {
+      margin: 0px 40px 40px 60px;
+      font-weight: 300;
+  }
+
+  #navbar > li:nth-child(1) > a{
+    color:rgba(196, 89, 89, 1);
+    font-weight: 400;
+  }
+
+  #navbar > li > a {
+    opacity: 1;
+    font-size: 30px;
+  }
+
+  .textlogo {
+    font-size: 40px;
+    display: block;
+    margin: 10px 0 0 44px;
+  }
+
+  .textlogo > a{
+    color: rgb(40,40,40);
+    text-decoration: none;
+  }
+
+  .toggle {
+      display: block;
+      position: absolute;
+      cursor: pointer;
+      font-size: 100px;
+      color: white;
+      z-index: 100;
+      right: 0;
+      margin: 30px 40px 0px 0px;
+      text-decoration: none;
+      transition: all .2s ease-out;
+  }
+  /******** MENU ICON  ***********/
+  .firstline {
+    height: 2px;
+    background-color: rgb(40,40,40);
+    width: 60px;
+  }
+  .secondline {
+    height: 2px;
+    margin-top: 20px;
+    background-color: rgb(40,40,40);
+    width: 60px;
+    z-index: 10;
+  }
+  .thirdline {
+    height: 2px;
+    margin-top: 20px;
+    background-color: rgb(40,40,40);
+    width: 60px;
+    z-index: 10;
+  }
+
+  .textbox {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      background-color: rgba(0,0,0,0.6);
+      border-left: 0;
+      border-right: 0;
+      animation: testanimasjonMobile 1.2s ease-in-out;
+  }
+
+  .textbox > h1 {
+      padding-top: 15%;
+      font-size: 60px;
+  }
+  .textbox > h2 {
+    font-size: 40px;
+    padding-bottom: 5%;
+
+  }
+
+  .readmore {
+    margin: 0;
+  }
+
+  #readmoretext {
+      border-radius: 10px;
+      padding: 15px 60px;
+      background-color: rgba(196, 89, 89, 1);
+      font-size: 35px;
+      font-weight: 400;
+  }
+
+  .picturebg {
+    height: 80vh;
+  }
+
+  .toTop {
+    font-size: 50px;
+    padding: 20px 10px;
+    margin-bottom: 12%;
+  }
+
+  #allText {
+    font-size: 30px;
+  }
+
+  footer {
+    height: 100px;
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Davon STARnet</title>
+        <meta name="description" content="Davon STARnet: Wireless internet for everyone">
+        <link type="text/css" rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+
+    <body>
+
+      <!-- Below is a little unorthodox code to make a menu-icon for the mobile-version. The reason behind
+      this is to avoid using JavaScript. The method gives us a little lower score on checker-site, but this was the method
+      that gave us most accessibilty on all platforms. This method includes the checkbox, page-wrap and sidebartoggler-->
+        <input type="checkbox" id="sidebartoggler" title="checbox for menu-symbol on mobile-version">
+
+        <div class="page-wrap">
+
+            <div class="mobileHeader">
+            <label for="sidebartoggler" class="toggle" text="In this label, the menu icon is made with several divs.">
+              <p id="test">NAILED IT</p>
+              <div class="iconanimation">
+                <div class="firstline"></div>
+                <div class="secondline"></div>
+                <div class="thirdline"></div>
+            </div>
+            </label>
+
+            <div class="textlogo"> <a href="index.html"><h1>dv</h1></a> </div>
+            </div>
+
+        <div id="container">
+            <header id="header" class="header-transparent">
+                <a href="index.html"><img src="Bilder/LOGO.png" alt="This picture shows the Davon logo."
+                  style="width: 150px;"></a>
+                <ul id="navbar">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="business.html">business</a></li>
+                    <li><a href="technical.html">technical</a></li>
+                    <li><a href="about.html">about us</a></li>
+                </ul>
+            </header>
+
+            <div class="main">
+            <div class="picturebg">
+                <img class="altbilde" src="Bilder/LOGO.png" alt="This is a large full screen drawing of a minimalistic house, with a PowerWall
+                mounted on the wall. Large glass windows are shown behind the 'MEET STARNET' text box, and the sky is dark.
+                A single wire runs from the PowerWall up to the roof, where the Solar Roof is hidden." />
+                <div class="textbox">
+                    <h1>meet starnet</h1>
+                    <h2>If there's weather, there's STARnet<br>Click to read more below </h2>
+                    <div class="readmore">
+                        <a href="" id="readmoretext">Read more</a>
+                    </div>
+                </div>
+                </div>
+
+            <div class="content">
+              <div id="underline">
+                <h1 id="headline">Introducing our new satellite internet technology</h1>
+              </div>
+            <div id="allText">
+            <div id="firstText">
+                <p>The internet is becoming more and more of a necessity in every part of the world. Millions of people still
+                  lack access, and for people in remote areas, even basic electric power is not a given. Fortunately, the global
+                  community is finally starting to understand the importance of green and renewable energy sources, and both the
+                  scientific community and private companies are researching new, environmentally friendly ways to reduce our
+                  dependence on fossil fuels. One of the companies that have made strides in this area is Tesla.
+                    </p></div>
+            <div id="secondText">
+                <p>The new and improved Tesla Powerwall 2 makes it possible to power one or more homes without requiring a
+                  connection to a power grid. It gathers energy from a connected solar cell panel or Solar Roof, and can store
+                  electricity for later use. Davon offers an add-on solution that seamlessly integrates with the Powerwall and the
+                  Solar Roof. Consisting of an array of antennas inside the solar cells, and a router, we can provide internet
+                  connectivity to everyone regardless of geography and without the need for expensive infrastructure.
+                </p></div>
+            <div id="thirdText">
+                <p>Satellite internet have made enormous progress over the latest years, as both up- and download speeds have
+                  skyrocketed, rivalling and even besting cabled connections. The main tradeoff is high delay, but as the
+                  technology progresses, we predict this will become even less of an issue in the future. Combining satellite
+                  internet and solar power in one package, the Davon STARnet is a simple solution for getting online. No matter
+                  where or how you live.
+                </p></div>
+                </div>
+            </div>
+
+                <div class="material-icons" id="arrowToTop"><a class="toTop-transparent" href="#">keyboard_arrow_up </a></div>
+
+        </div>
+            <footer>
+                <p>Copyright ©2016 Davon Inc. All rights reserved.</p>
+            </footer>
+    </div>
+
+        <!-- script to make the background of the navigationbar solid color when starting scrolling, this is to prevent the navbar being hard to see.
+        Also script for smoothscrolling. -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollto/1.4.6/jquery-scrollto.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <script src="js/script_home.js"></script>
+
+        <!--backup for browsers who don't have JavaScript enabled-->
+        <noscript><link type="text/css" rel="stylesheet" href="css/styles_backup.css"></noscript>
+
+        <!--[if IE]>
+          <link type="text/css" rel="stylesheet" href="css/styles_backup.css" />
+
+        <![endif]-->
+
+      </div>
+    </body>
+</html>
+
+<!-- We used following sites for inspiration and information:
+From ComputerWorld, satellite internet works - http://www.cw.no/artikkel/telekom/endelig-fungerer-internett-satellitt-0
+From Tooway; example of satellite internet how it is today - http://www.tooway.no/
+Youtubevideo of Elon Mush presenting the Solar Roof - https://www.youtube.com/watch?v=dRqSkR4ENAg
+Short about satellitecommunication - http://www.satellitter.no/index.php/Kommunikasjon
+Tesla Powerwall 2 - https://www.tesla.com/powerwall
+Tesla Solar Roof – https://www.tesla.com/solar
+SpaceX and their program - http://www.spacex.com/about -->
+
+
+<!-- TLDR; http://picpaste.com/pics/Thanks_for_all_the_fish.1480534092.png -->

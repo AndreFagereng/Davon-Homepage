@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Davon STARnet</title>
+        <meta name="description" content="Davon STARnet: Wireless internet for everyone">
+        <link type="text/css" rel="stylesheet" href="css/styles_business.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+
+    <body>
+
+      <!-- Below is a little unorthodox code to make a menu-icon for the mobile-version. The reason behind
+      this is to avoid using JavaScript. The method gives us a little lower score on checker-site, but this was the method
+      that gave us most accessibilty on all platforms. This method includes the checkbox, page-wrap and sidebartoggler-->
+      <input type="checkbox" id="sidebartoggler" title="checbox for menu-symbol on mobile-version">
+
+      <div class="page-wrap">
+
+          <div class="mobileHeader">
+          <label for="sidebartoggler" class="toggle" text="In this label, the menu icon is made with several divs.">
+            <p id="test">NAILED IT</p>
+            <div class="iconanimation">
+              <div class="firstline"></div>
+              <div class="secondline"></div>
+              <div class="thirdline"></div>
+          </div>
+          </label>
+
+          <div class="textlogo"><a href="index.html"> <h1>dv</h1></a> </div>
+          </div>
+
+      <div id="container">
+          <header id="header" class="header-transparent">
+              <a href="index.html"><img src="Bilder/LOGO.png" alt="This picture shows the Davon logo." style="width: 150px;"></a>
+              <ul id="navbar">
+                  <li><a href="index.html">home</a></li>
+                  <li><a href="business.html">business</a></li>
+                  <li><a href="technical.html">technical</a></li>
+                  <li><a href="about.html">about us</a></li>
+              </ul>
+          </header>
+
+            <div class="main">
+            <div id="main-slider" class="picturebg">
+              <img class="altbilde" src="Bilder/LOGO.png"  alt="This is a large full screen drawing of a big modern house, with a Tesla Model 3 vehicle inside of a garage with a Tesla Powerwall. The house has large open windows, a concrete driveway and dark grass surrounding it. In the background is a dark ocean as the sun is starting to set. The roof is clearly visible, and shows hints of the Solar Roof, along with the antenna that Davon wants to implement."/>
+              </div>
+
+            <div class="content">
+              <div id="underline">
+                <h1 id="headline">The road ahead and what comes next</h1>
+              </div>
+            <div id="allText">
+            <div id="firstText">
+                <p>We have no interest in becoming a private company, instead opting to become either a subsidary of or get incorporated
+                  into Tesla, relying on their expertise in addition to the SpaceX program to launch the necessary satellites into orbit. As the technology as of today will be too expensive for a swift global roll-out, the implementation of the Davon STARnet will be carried out in three steps.</p></div>
+
+                    <div id="thirdPicture">
+                      <img class="altbilde" src="Bilder/LOGO.png"  alt="TThis is a large full screen drawing of a research base in an arctic environment. There's large snow covered mountains, a clear blue sky and white snow on the ground. An icy lake can be spotted in the lower left part of the image. Ten large windmills are stacked on a hillside, in front of the research base. Several solar panels are also shown, both on the base, and besides it in the snow. The drawing is in broad daylight."/>
+                    </div>
+                <hr>
+
+                <!-- DOLLA DOLLA BILLS YALL -->
+            <div id="secondText">
+                <div id="stepOne" class="steps">
+                    <h4>Step 1</h4>
+                    <p>Start with a small scale rollout to people with expendable income. This will bring in fresh capital and create
+                      value for the brand while making research and development easier. In turn the technology behind it becomes cheaper and
+                      more efficient.
+                    </p>
+                </div>
+
+                <div id="stepTwo" class="steps">
+                    <h4>Step 2</h4>
+                    <p>As the technology improves, we expand the market to middle income households. As STARnet is both a technological
+                      innovation and an environmentally conscious lifestyle product, we aim at making the brand synonymous with a clean
+                      future.</p>
+                </div>
+
+                <div id="stepThree" class="steps">
+                    <h4>Step 3</h4>
+                    <p>Finally, as the technology becomes ubiquitous, STARnet will be marketed to everyone. Combined with government
+                      incentives and subsidies in poorer regions, fast internet access will become easily available to everyone.</p>
+                </div>
+             </div>
+
+                <hr>
+
+                <div id="fourthPicture">
+                  <img class="altbilde" src="Bilder/LOGO.png"  alt="TThis is a large full screen drawing of a house in a desert environment. There are large mountains, a cloudy blue sky and sand surrounding the house. The house has two windows on the left-hand side and a front door on the right. A pipeline can also be seen to the house roof. The drawing is in broad daylight."/>
+                </div>
+
+                <div id="thirdText">
+                  <h2>Access for everyone</h2>
+                <p>Davon's final goal is internet access for everyone in a simple, easy-to-use, and economically viable
+                  solution independent to weather conditions. We focus particularly on residents in rural or remote
+                  areas without the necessary infrastructure for cabled access. Whether you live in the desert or the
+                  tundra, if there's weather, there's STARnet!
+                </p></div>
+                </div>
+
+            </div>
+                <div class="material-icons" id="arrowToTop"><a class="toTop-transparent" href="#">keyboard_arrow_up </a></div>
+        </div>
+            <footer>
+                <p>Copyright ©2016 Davon Inc. All rights reserved.</p>
+            </footer>
+    </div>
+
+        <!-- script for smoothscroll, I know jQuery-scripts will be ignored, but I didn't manage to make it in pure JavaScript. -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollto/1.4.6/jquery-scrollto.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <!--script to make the background of the navbar solid color when starting scrolling, this is to prevent the navbar being hard to see -->
+        <script src="js/script_buis.js"></script>
+
+        <!--backup for browsers who don't have JavaScript-->
+        <noscript><link type="text/css" rel="stylesheet" href="css/styles_business_backup.css"></noscript>
+      </div>
+    </body>
+</html>
